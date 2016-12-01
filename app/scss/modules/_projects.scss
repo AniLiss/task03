@@ -1,0 +1,18 @@
+.projects {
+  .wrapper {
+    justify-content: space-around;
+    padding-bottom: 25px;
+
+    .projects-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-basis: 50%;
+
+      img {
+        width: 150px;
+        padding: 25px 10px 10px;
+      }
+    }
+  }
+}

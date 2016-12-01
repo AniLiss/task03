@@ -1,0 +1,55 @@
+html,
+body,
+ul,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  padding-bottom: 20px;
+  font-family: $header-font-family;
+  font-weight: 400;
+  font-size: $header-font-size;
+  color: $header-font-color;
+  text-transform: uppercase;
+  line-height: $header-line-height;
+}
+
+body {
+  font-family: $main-font-family;
+  font-size: $base-font-size;
+  color: $base-font-color;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.main-content {
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 55px 20px 0;
+}
+
+.skills,
+.projects,
+.interests,
+.tools,
+footer {
+  margin-top: 0;
+}
+
+.description {
+  font-size: $description-font-size;
+  line-height: 24px;
+}
+
+.date {
+  font-size: $date-font-size;
+  text-transform: uppercase;
+  line-height: 20px;
+}

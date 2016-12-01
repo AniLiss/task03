@@ -1,0 +1,35 @@
+.skills {
+  ul {
+    justify-content: space-around;
+
+    .skills-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      .circle-progress-bar {
+        padding-top: 20px;
+      }
+    }
+  }
+
+  .skills-list {
+    padding: 25px 0;
+
+    li {
+      list-style: disc;
+      list-style-position: inside;
+      flex-basis: 250px;
+      color: #dbe1e8;
+
+      span {
+        color: $base-font-color;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+//base
+.main-content {
+  @media screen and (min-width: $medium-width) {
+    padding: 55px 20px 0;
+  }
+}
+
+.skills,
+.projects,
+.interests,
+.tools,
+footer {
+  @media screen and (min-width: $medium-width) {
+    margin-top: 40px;
+  }
+}
+
+//about
+
+.wrapper {
+  .logo {
+    @media screen and (min-width: $medium-width) {
+      //flex-basis: 20%;
+    }
+
+    @media screen and (min-width: $large-width) {
+      flex-basis: 20%;
+    }
+
+    h1 {
+      @media screen and (min-width: $medium-width) {
+        //text-align: left;
+      }
+
+      @media screen and (min-width: $large-width) {
+        text-align: left;
+      }
+    }
+  }
+
+  .about {
+    @media screen and (min-width: $medium-width) {
+      flex-basis: 50%;
+    }
+
+    @media screen and (min-width: $large-width) {
+      flex-basis: 372px;
+    }
+  }
+}
+
+//experience
+
+.experience {
+  @media screen and (min-width: $medium-width) {
+    padding-left: 25px;
+  }
+}
+
+//interests
+
+.interests {
+  .wrapper {
+    figure {
+      @media screen and (min-width: $medium-width) {
+        flex-basis: 35%;
+      }
+
+      @media screen and (min-width: $large-width) {
+        flex-basis: 20%;
+      }
+    }
+  }
+}
+
+//projects
+.projects {
+  .wrapper {
+    .projects-item {
+      @media screen and (min-width: $medium-width) {
+        flex-basis: 20%;
+      }
+
+      @media screen and (min-width: $large-width) {
+        flex-basis: 20%;
+      }
+    }
+  }
+}
+
+//tools
+.tools {
+  .progress-bar {
+    @media screen and (min-width: $medium-width) {
+      flex-basis: 58%;
+      margin-bottom: 0;
+    }
+  }
+
+  .activity {
+    @media screen and (min-width: $medium-width) {
+      flex-basis: 38%;
+      margin-bottom: 0;
+      margin-left: 20px;
+    }
+  }
+}
+
+

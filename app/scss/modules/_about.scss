@@ -1,0 +1,99 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+
+  .logo {
+    max-height: 150px;
+    flex-basis: 100%;
+    margin-bottom: 20px;
+
+    h1 {
+      text-align: center;
+    }
+
+    img {
+      width: 148px;
+      height: 148px;
+    }
+  }
+
+  .about {
+    flex-basis: 100%;
+    line-height: 16px;
+
+    p:nth-child(2) {
+      padding-bottom: 16px;
+    }
+
+    p:nth-child(3) {
+      position: relative;
+      min-height: 60px;
+
+      &::before,
+      &::after {
+        display: block;
+        position: absolute;
+        top: 150%;
+        content: '';
+        width: 28%;
+        height: 1px;
+        background: #ececec;
+      }
+
+      &::before {
+        left: 13%;
+      }
+
+      &::after {
+        right: 13%;
+      }
+    }
+
+    ul {
+      &::before {
+        display: block;
+        position: absolute;
+        top: -15px;
+        right: 47%;
+        content: '';
+        width: 24px;
+        height: 22px;
+        background-repeat: no-repeat;
+        background-image: url(../../img/icon_separator.png);
+      }
+    }
+  }
+
+  .about .contacts {
+    margin-top: 30px;
+    padding-top: 45px;
+    position: relative;
+
+    li {
+      margin-bottom: 20px;
+
+      a {
+        text-decoration: none;
+        color: $accent-font-color;
+
+        &:hover svg {
+          fill: #2a6496;
+        }
+        span {
+          padding-right: 10px;
+        }
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &:hover {
+      &::before {
+        transform: rotate(360deg);
+        transition: all 0.5s ease;
+      }
+    }
+  }
+}

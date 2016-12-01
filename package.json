@@ -1,0 +1,24 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "mockup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AniLiss/epam-frontend-spb-task01.git"
+  },
+  "author": "Elizabeth_Anatskaya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AniLiss/epam-frontend-spb-task01/issues"
+  },
+  "homepage": "https://github.com/AniLiss/epam-frontend-spb-task01#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2",
+    "stylelint-config-standard": "^15.0.0"
+  }
+}

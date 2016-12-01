@@ -1,11 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <title>task 01-2</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700%7CPT+Sans+Narrow&amp;subset=latin,cyrillic'
+          rel='stylesheet' type='text/css'>
+    <link href="app/css/styles.css" rel="stylesheet">
+    <script defer src="script/svg-icons.js"></script>
 </head>
 <body>
+<main class="main-content">
+    <div class="wrapper">
+        <div class="logo">
+            <h1><img src="img/pic_avatar.png" alt="Иван Белобородов"></h1>
+        </div>
 
+        <section class="about">
+            <h2>Обо мне</h2>
+            <p>Привет! Меня зовут Иван Белобородов. Я родился и вырос в Ижевске, столице Удмуртской Республики.
+                Последние несколько лет занимаюсь проектированием и дизайном мобильных приложений на базе iOS и
+                Android.
+                В данный момент живу в Москве и ищу постоянное место работы.
+            </p>
+            <p>Испытываю страсть к девайсам, имеющим touch-интерфейс, классическим мотоциклам, немецкому пиву,
+                анлийской
+                музыке
+                и французскому кино.</p>
+            <ul class="contacts">
+                <li>
+                    <a class="site" href="http://beliv.net/"><span id="anchor-placeholder"></span>beliv.net</a>
+                </li>
+                <li>
+                    <a href="https://ru-ru.facebook.com/ivan.beloborodov"><span id="facebook-placeholder"></span>ivan.beloborodov</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/beliv?lang=ru"><span id="twitter-placeholder"></span>@beliv</a>
+                </li>
+                <li>
+                    <a href="https://dribbble.com/beliv"><span id="dribbble-placeholder"></span>@dribbble.com/beliv</a>
+                </li>
+                <li>
+                    <a href="http://revision.ru/a/beliv/"><span
+                            id="revision-placeholder"></span>revision.ru/a/beliv/</a>
+                </li>
+            </ul>
+        </section>
+
+        <section class="experience">
+            <h2>Опыт работы</h2>
+            <ul>
+                <li><span>Центр Высоких Технологий</span>
+                    <p class="description">UX Дизайнер</p>
+                    <p class="date">Январь 2011 — июль 2013</p>
+                </li>
+                <li><span>ООО «БИТ-Мастер»</span>
+                    <p class="description">Дизайнер мобильных интерфейсов</p>
+                    <p class="date">август 2012 — июнь 2013 (внештатно)</p>
+                </li>
+                <li><span>Fastdev</span>
+                    <p class="description">Дизайнер мобильных интерфейсов</p>
+                    <p class="date">Апрель 2012 — июнь 2012 (внештатно)</p>
+                </li>
+                <li><span>ООО «Танго Телеком»</span>
+                    <p class="description">Дизайнер веб и мобильных интерфейсов</p>
+                    <p class="date">Сентябрь 2010 — январь 2011 (внештатно)</p>
+                </li>
+                <li><span>Фрилансер</span>
+                    <p class="description">Веб-дизайнер</p>
+                    <p class="date">март 2009 — январь 2011</p>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <section class="skills">
+        <h2>Навыки</h2>
+        <ul class="wrapper">
+
+            <li class="skills-item">
+                <p class="description">User Exprerience</p>
+                <p class="date">С 2010 года</p>
+                <div class="circle-progress-bar">
+                    <p class="cpb-value">55%</p>
+                    <svg class="circle-svg">
+                        <circle class="circle-progress-bar" r="100" cx="105" cy="105" fill="none" stroke="#ececec"
+                                stroke-width="5"></circle>
+                        <circle class="circle-progress-bar cpb-progress cpb-progress-value" r="100" cx="105" cy="105"
+                                fill="none" stroke="#39a2d1" stroke-width="5"></circle>
+                    </svg>
+                </div>
+            </li>
+
+            <li class="skills-item">
+                <p class="description">Дизайн мобильных интерфейсов</p>
+                <p class="date">С 2011 года</p>
+                <div class="circle-progress-bar">
+                    <p class="cpb-value">80%</p>
+                    <svg class="circle-svg">
+                        <circle class="circle-progress-bar" r="100" cx="105" cy="105" fill="none" stroke="#ececec"
+                                stroke-width="5"></circle>
+                        <circle class="circle-progress-bar cpb-progress cpb-progress-value" r="100" cx="105" cy="105"
+                                fill="none" stroke="#39a2d1" stroke-width="5"></circle>
+                    </svg>
+                </div>
+            </li>
+
+            <li class="skills-item">
+                <p class="description">Веб-интерфейсы</p>
+                <p class="date">С 2010 года</p>
+                <div class="circle-progress-bar">
+                    <p class="cpb-value">60%</p>
+                    <svg class="circle-svg">
+                        <circle class="circle-progress-bar" r="100" cx="105" cy="105" fill="none" stroke="#ececec"
+                                stroke-width="5"></circle>
+                        <circle class="circle-progress-bar cpb-progress cpb-progress-value" r="100" cx="105" cy="105"
+                                fill="none" stroke="#39a2d1" stroke-width="5"></circle>
+                    </svg>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="skills-list wrapper">
+            <li><span>Базовые знания HTML & CSS</span></li>
+            <li><span>Клубный фотограф</span></li>
+            <li><span>Интерфейсы для Smart TV</span></li>
+            <li><span>7 проектов в сфере такси за 3 года</span></li>
+        </ul>
+    </section>
+
+    <section class="tools">
+        <h2>Инструменты</h2>
+        <div class="wrapper">
+            <ul class="progress-bar">
+                <li class="pb-line">
+                    <div>
+                        <p class="pb-line-value">Photoshop</p>
+                        <div class="pb-line-progress pb-line-progress-blue"></div>
+                    </div>
+                </li>
+                <li class="pb-line">
+                    <div>
+                        <p class="pb-line-value">Illustrator</p>
+                        <div class="pb-line-progress pb-line-progress-green"></div>
+                    </div>
+                </li>
+                <li class="pb-line">
+                    <div>
+                        <p class="pb-line-value">Indesign</p>
+                        <div class="pb-line-progress pb-line-progress-purple"></div>
+                    </div>
+                </li>
+                <li class="pb-line">
+                    <div>
+                        <p class="pb-line-value">Sketch</p>
+                        <div class="pb-line-progress pb-line-progress-aqua"></div>
+                    </div>
+                </li>
+                <li class="pb-line">
+                    <div>
+                        <p class="pb-line-value">Axure</p>
+                        <div class="pb-line-progress pb-line-progress-orange"></div>
+
+                    </div>
+                </li>
+            </ul>
+
+            <div class="activity">
+                <p class="activity-caption">Активность</p>
+                <ul class="activity-list wrapper">
+                    <li>
+                        <p>Balsamiq Mockups</p>
+                        <p class="date">август 2013</p>
+                    </li>
+                    <li>
+                        <p>Diablo III</p>
+                        <p class="date">29 сентября</p>
+                    </li>
+                    <li>
+                        <p>iA Writer</p>
+                        <p class="date">позавчера</p>
+                    </li>
+                    <li>
+                        <p>Lightroom 4</p>
+                        <p class="date">сентябрь 2013</p>
+                    </li>
+                    <li>
+                        <p>Skala Preview & View</p>
+                        <p class="date">вчера</p>
+                    </li>
+                    <li>
+                        <p>Xcode</p>
+                        <p class="date">май 2013</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <h2>Последние проекты</h2>
+        <div class="wrapper">
+            <div class="projects-item">
+                <p class="description">TaxiCaller</p>
+                <p class="date">декабрь 2012 - март 2013</p>
+                <img src="img/pic_taxi_caller.png" alt="TaxiCaller">
+            </div>
+            <div class="projects-item">
+                <p class="description">Check, please!</p>
+                <p class="date">май 2013 — ...</p>
+                <img src="img/pic_check_please.png" alt="Check, please!">
+            </div>
+            <div class="projects-item">
+                <p class="description">Izhevsk.ru</p>
+                <p class="date">ноябрь 2012 — февраль 2013</p>
+                <img src="img/pic_izhevsk.png" alt="Izhevsk.ru">
+            </div>
+            <div class="projects-item">
+                <p class="description">RP.com</p>
+                <p class="date">Июнь 2012 — Март 2013</p>
+                <img src="img/pic_rp.png" alt="RP.com">
+            </div>
+        </div>
+    </section>
+
+    <section class="interests">
+        <h2>Интересы</h2>
+        <div class="wrapper">
+            <figure class="interests-item">
+                <figcaption>Музыка</figcaption>
+                <img src="img/img_interest_music.jpg" alt="music">
+            </figure>
+            <figure class="interests-item">
+                <figcaption>Мотоциклы</figcaption>
+                <img src="img/img_interest_bike.jpg" alt="motorcycle">
+            </figure>
+            <figure class="interests-item">
+                <figcaption>Кулинария</figcaption>
+                <img src="img/img_interest_cookery.jpg" alt="cookery">
+            </figure>
+            <figure class="interests-item">
+                <figcaption>Велоспорт</figcaption>
+                <img src="img/img_interest_bicycle_sport.jpg" alt="cycle_racing">
+            </figure>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <figure class="wrapper">
+        <figcaption>That's all, folks!</figcaption>
+        <img src="img/pic_footer.png" alt="That's all, folks">
+    </figure>
+</footer>
 </body>
 </html>

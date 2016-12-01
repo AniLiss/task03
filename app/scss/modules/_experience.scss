@@ -1,0 +1,82 @@
+.experience {
+  padding-left: 0;
+
+  ul {
+    padding-left: 30px;
+
+    li {
+      padding-bottom: 25px;
+      position: relative;
+
+      &::before {
+        display: block;
+        content: '';
+        background: #fff;
+        position: absolute;
+        left: -25px;
+        top: 17px;
+        bottom: -8px;
+        width: 7px;
+        border-left: 1px solid #dce2e6;
+        border-right: 1px solid #dce2e6;
+        z-index: 1;
+      }
+
+      &::after {
+        display: block;
+        content: '';
+        background: #3d9ccc;
+        position: absolute;
+        top: 15px;
+        left: -22px;
+        bottom: -9px;
+        width: 3px;
+        z-index: 1;
+      }
+    }
+
+    span {
+      color: $accent-font-color;
+      position: relative;
+      font-size: $description-font-size;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        border: 1px solid #dce2e6;
+        top: 5px;
+        left: -28px;
+        background-color: white;
+        z-index: 0;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #3d9ccc;
+        top: 9px;
+        left: -24px;
+      }
+    }
+
+    li:last-child::before,
+    li:last-child::after {
+      padding-bottom: 0;
+      background: none;
+      border: none;
+    }
+
+    li:nth-last-child(-n+2)::before,
+    li:nth-last-child(-n+2)::after {
+      padding-bottom: 0;
+      background: none;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+@keyframes animate {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+.pb-line {
+  background: #e6e9ed;
+  position: relative;
+  min-height: 25px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  z-index: -1;
+
+  &-value {
+    color: #fff;
+    line-height: 21px;
+    padding: 3px 10px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: $date-font-size;
+  }
+
+  &-progress {
+    animation: animate 0.9s linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    transition: width 1s linear;
+
+    &-blue {
+      background: #1ba0e1;
+      max-width: 90%;
+      z-index: -1;
+    }
+
+    &-green {
+      background: #8cbf26;
+      max-width: 70%;
+      z-index: -1;
+    }
+
+    &-purple {
+      background: #b664e6;
+      max-width: 40%;
+      z-index: -1;
+    }
+
+    &-aqua {
+      background: #25b9b8;
+      max-width: 20%;
+      z-index: -1;
+    }
+
+    &-orange {
+      background: #f09709;
+      max-width: 50%;
+      z-index: -1;
+    }
+  }
+}

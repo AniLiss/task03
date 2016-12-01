@@ -1,0 +1,37 @@
+.tools {
+  .wrapper {
+    justify-content: space-between;
+    padding-bottom: 25px;
+  }
+
+  .progress-bar {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .activity {
+    flex-basis: 100%;
+    min-width: 270px;
+    position: relative;
+
+    &-caption {
+      text-transform: uppercase;
+      position: absolute;
+      top: -10%;
+      right: 3%;
+    }
+
+    .activity-list {
+      padding: 10px;
+      border-radius: 4px;
+      border: solid 1px #e7e7e9;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        line-height: 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+@keyframes dash {
+  0% {
+    stroke-dasharray: 10% 360%;
+  }
+  20% {
+    stroke-dasharray: 21% 360%;
+  }
+  40% {
+    stroke-dasharray: 40% 360%;
+  }
+  60% {
+    stroke-dasharray: 60% 360%;
+  }
+  80% {
+    stroke-dasharray: 100% 360%;
+  }
+  100% {
+    stroke-dasharray: 170% 360%;
+  }
+}
+
+.circle-progress-bar {
+  width: 210px;
+  height: 210px;
+  display: block;
+  position: relative;
+
+  .circle-svg {
+    transform: rotate(-90deg);
+    width: 210px;
+    height: 210px;
+  }
+
+  .cpb-value {
+    margin: 0;
+    position: absolute;
+    top: 43%;
+    left: 34%;
+    font-size: 3em;
+    font-family: $percentage-font-family;
+
+    p {
+      font-family: $percentage-font-family;
+    }
+  }
+
+  .cpb-progress {
+    animation: dash 0.5s linear alternate;
+  }
+}
+
+.skills {
+  .skills-item:nth-child(1) .cpb-progress-value {
+    stroke-dasharray: 190% 110%;
+  }
+
+  .skills-item:nth-child(2) .cpb-progress-value {
+    stroke-dasharray: 250% 110%;
+  }
+
+  .skills-item:nth-child(3) .cpb-progress-value {
+    stroke-dasharray: 200% 110%;
+  }
+}

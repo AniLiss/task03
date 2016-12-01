@@ -1,0 +1,21 @@
+footer {
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+
+    figcaption {
+      font-family: $footer-font-family;
+      font-size: 18px;
+      line-height: 24px;
+      font-style: italic;
+      position: relative;
+      padding-bottom: 30px;
+    }
+
+    img {
+      width: 150px;
+    }
+  }
+}
